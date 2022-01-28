@@ -1,0 +1,54 @@
+@import 'src/tokens.scss';
+
+.Todo {
+  display: flex;
+  font-weight: $text-weight-bold;
+  user-select: none;
+  padding: 0.25rem;
+  border-radius: $border-radius-m;
+
+  &:hover {
+    background-color: $color-grey-100;
+    color: $text-on-grey-100;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+  }
+
+  &__checkbox {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  &__desc {
+    padding: 0 0.5rem;
+    font-size: $text-size-m;
+  }
+
+  &__delete-button {
+    all: unset;
+    margin-left: auto;
+    width: 2rem;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $text-size-xl;
+    border-radius: $border-radius-m;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-grey-050;
+    }
+  }
+
+  &--is-completed {
+    .Todo {
+      &__label {
+        text-decoration: line-through;
+        color: $text-on-white--subdued;
+      }
+    }
+  }
+}

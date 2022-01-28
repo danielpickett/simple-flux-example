@@ -1,0 +1,28 @@
+@import 'src/tokens.scss';
+
+.NewTodoForm {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: $text-size-m;
+    font-weight: $text-weight-bold;
+  }
+
+  &__text-input {
+    padding: 0.5rem;
+    font-size: $text-size-m;
+    font-weight: $text-weight-bold;
+  }
+
+  &__button {
+    font-size: $text-size-m;
+    font-weight: $text-weight-bold;
+  }
+}
